@@ -4,7 +4,7 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "buildCommand": "CI=false npm run build"
+        "buildCommand": "CI=false GENERATE_SOURCEMAP=false npm run build"
       }
     }
   ],
@@ -13,6 +13,5 @@
       "src": "/(.*)",
       "dest": "/build/$1"
     }
-  ],
-  "version": 2
+  ]
 }
