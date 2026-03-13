@@ -13,5 +13,11 @@
       "src": "/(.*)",
       "dest": "/build/$1"
     }
-  ]
+  ],
+  "version": 2,
+  "build": {
+    "env": {
+      "NODE_VERSION": "18.17.0"
+    }
+  }
 }
